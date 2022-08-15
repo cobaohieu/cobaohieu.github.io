@@ -28,7 +28,7 @@ body {
 
 .timeline {
   width: 355px;
-  height: 2776px;
+  height: 2396px;
   background: #ECF1F524;
   mix-blend-mode: normal;
   backdrop-filter: blur(15px);
@@ -62,7 +62,7 @@ body {
 }
 .timeline .box {
   width: 100%;
-  height: 2559px;
+  height: 2259px;
   background: #fbfcfd;
   margin-top: 99.5px;
 }
