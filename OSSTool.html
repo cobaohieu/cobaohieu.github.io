@@ -1,498 +1,536 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>OSS Scanning Comments</title>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://www.boschautoparts.com/o/bosch-autoparts-theme/images/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1, width=device-width">
-    <meta name="theme-color" content="#ef6c00">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta property="og:description" content="" />
-    <meta property="og:title" content="" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      label {
-        margin-bottom: 7px;
-      }
 
-      figure {
-        display: block;
-        background: #cdf;
-        width: 90%;
-        max-width: 50em;
-        box-sizing: border-box;
-        margin: 1em auto;
-        padding: 0.5em 1em;
-        border: solid thin navy;
-      }
+<head>
+	<title>OSS Scanning Comments</title>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" type="image/x-icon"
+		href="https://www.boschautoparts.com/o/bosch-autoparts-theme/images/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1, width=device-width">
+	<meta name="theme-color" content="#ef6c00">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta property="og:description" content="" />
+	<meta property="og:title" content="" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		label {
+			margin-bottom: 7px;
+		}
 
-      figure:nth-of-type(2n) {
-        background: #bfc;
-      }
+		figure {
+			display: block;
+			background: #cdf;
+			width: 90%;
+			max-width: 50em;
+			box-sizing: border-box;
+			margin: 1em auto;
+			padding: 0.5em 1em;
+			border: solid thin navy;
+		}
 
-      figcaption,
-      figure>div {
-        display: block;
-        vertical-align: middle;
-      }
+		figure:nth-of-type(2n) {
+			background: #bfc;
+		}
 
-      figure>div {
-        text-align: center;
-      }
+		figcaption,
+		figure>div {
+			display: block;
+			vertical-align: middle;
+		}
 
-      svg,
-      .bg-svg {
-        border: thin dotted darkgrey;
-      }
+		figure>div {
+			text-align: center;
+		}
 
-      svg.defs-only {
-        display: block;
-        position: absolute;
-        height: 0;
-        width: 0;
-        margin: 0;
-        padding: 0;
-        border: none;
-        overflow: hidden;
-      }
+		svg,
+		.bg-svg {
+			border: thin dotted darkgrey;
+		}
 
-      .fixlabel {
-        display: block;
-      }
+		svg.defs-only {
+			display: block;
+			position: absolute;
+			height: 0;
+			width: 0;
+			margin: 0;
+			padding: 0;
+			border: none;
+			overflow: hidden;
+		}
 
-      .input {
-        display: block;
-        margin-bottom: 7px;
-      }
+		.fixlabel {
+			display: block;
+		}
 
-      .btn {
-        box-sizing: border-box;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-color: transparent;
-        border: 2px solid #e74c3c;
-        border-radius: 0.6em;
-        color: #e74c3c;
-        cursor: pointer;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 1;
-        margin: 0px;
-        padding: 1.2em 2.8em;
-        text-decoration: none;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-      }
+		.input {
+			display: block;
+			margin-bottom: 7px;
+		}
 
-      .btn:hover,
-      .btn:focus {
-        color: #fff;
-        outline: 0;
-      }
+		.btn {
+			box-sizing: border-box;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background-color: transparent;
+			border: 2px solid #e74c3c;
+			border-radius: 0.6em;
+			color: #e74c3c;
+			cursor: pointer;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-align-self: center;
+			-ms-flex-item-align: center;
+			align-self: center;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 1;
+			margin: 0px;
+			padding: 1.2em 2.8em;
+			text-decoration: none;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: 'Montserrat', sans-serif;
+		}
 
-      .btn-first {
-        -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-      }
+		.btn:hover,
+		.btn:focus {
+			color: #fff;
+			outline: 0;
+		}
 
-      .btn-first:hover {
-        box-shadow: 0 0 40px 40px #e74c3c inset;
-      }
+		.btn-first {
+			-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+			transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+		}
 
-      .btn-fourth {
-        border-color: #218838;
-        color: #218838;
-        background-image: -webkit-linear-gradient(45deg, #218838 50%, transparent 50%);
-        background-image: linear-gradient(45deg, #218838 50%, transparent 50%);
-        background-position: 100%;
-        background-size: 400%;
-        -webkit-transition: background 300ms ease-in-out;
-        transition: background 300ms ease-in-out;
-      }
+		.btn-first:hover {
+			box-shadow: 0 0 40px 40px #e74c3c inset;
+		}
 
-      .btn-fourth:hover {
-        background-position: 0;
-      }
+		.btn-fourth {
+			border-color: #218838;
+			color: #218838;
+			background-image: -webkit-linear-gradient(45deg, #218838 50%, transparent 50%);
+			background-image: linear-gradient(45deg, #218838 50%, transparent 50%);
+			background-position: 100%;
+			background-size: 400%;
+			-webkit-transition: background 300ms ease-in-out;
+			transition: background 300ms ease-in-out;
+		}
 
-      #btn-top {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: ff8b24;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-      }
+		.btn-fourth:hover {
+			background-position: 0;
+		}
 
-      #btn-top:hover {
-        background-color: #555;
-      }
-    </style>
-  </head>
-  <body style="
-	background-color: #f6fafd;
+		#btn-top {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: ff8b24;
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 4px;
+		}
+
+		#btn-top:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+
+<body style="
+	/* background-color: #f6fafd; */
+	background-image: url('https://www.bosch-home.com/store/resources/5f1391b2e32a96c028327952251aa37c5c85165d/mbmd/a01-rebrush/img/shape_horizontal.svg');
+	background-size: cover;
+  	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
 	">
-    <img class="pull-right" style="width: 100%; background: url(https://www.bosch-home.com/store/resources/5f1391b2e32a96c028327952251aa37c5c85165d/mbmd/a01-rebrush/img/shape_horizontal.svg); background-size: cover;" alt="" title="" height="9" border="0" width="100%" top="0">
-    <div class="container" style="background-color: #ffffff">
-      <!-- Container -->
-      <!-- Container Head-->
-      <table>
-        <td>
-          <!-- <img class="pull-right" style="width: 150px; height: 30px; background: url(https://www.boschautoparts.com/o/bosch-autoparts-theme/images/bosch-logo.svg); background-size: cover;" alt="" title="" height="100%" border="0" width="100%" top="0"> -->
-          <!-- <img class="pull-right" src="#"
+	<img class="pull-right"
+		style="width: 100%; background: url('https://www.bosch-home.com/store/resources/5f1391b2e32a96c028327952251aa37c5c85165d/mbmd/a01-rebrush/img/shape_horizontal.svg'); background-size: cover; background-attachment: fixed;"
+		alt="" title="" height="9" border="0" width="100%" top="0">
+
+	<div class="container" style="background-color: #ffffff">
+		<!-- Container -->
+		<!-- Container Head-->
+		<table>
+			<td>
+				<!-- <img class="pull-right" style="width: 150px; height: 30px; background: url(https://www.boschautoparts.com/o/bosch-autoparts-theme/images/bosch-logo.svg); background-size: cover;" alt="" title="" height="100%" border="0" width="100%" top="0"> -->
+				<!-- <img class="pull-right" src="#"
 					style="width: 150px; height: 30px; background: url(); background-size: cover;" alt="" title=""
 					border="0" top="0"> -->
-          <img src="https://www.bosch-softwaretechnologies.com/media/en/tech/tech_images/bosch_logo_res_260x85.png" alt="Bosch Global" width="50%" height="100%">
-        </td>
-        <td class="text-center"></td>
-        <td class="text-center">
-          <h1 class="text-center text-lg-center text-danger font-weight-bold" style="font-weight:600 ; color: #0069d9;">
-            <strong> OSS SCANNING COMMENTS TOOLS <span style="color:#ea0016" class="txt-rotate" data-period="2000" data-rotate='[ "up to 2023" ]'></span>
-            </strong>
-          </h1>
-        </td>
-      </table>
-      <!-- Container Head-->
-      <!-- Container Body -->
-      <table class="table table-dark"">
-														<!-- <thead class=" p-3 mb-2 bg-success text-white">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Names</th>
-          <th scope="col">Comments</th>
-        </tr>
-        </thead> --> <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>
-              <div class="input">
-                <label>ModificationStatus:</label>
-              </div>
-            </td>
-            <td>
-              <div class="input">
-                <select name="modificationstatus" id="modificationstatus" class="form-control">
-                  <option value="As-Is" selected>As-Is</option>
-                  <option value="Modified">Modified</option>
-                </select>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>
-              <div class="input">
-                <label>DistributionFormat:</label>
-              </div>
-            </td>
-            <td>
-              <div class="input">
-                <select name="distributionformat" id="distributionformat" class="form-control">
-                  <option value="Binary" selected>Binary</option>
-                  <option value="Source">Source</option>
-                </select>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>
-              <div class="input">
-                <label>IntegrationType:</label>
-              </div>
-            </td>
-            <td>
-              <div class="input">
-                <select multiple name="integration" id="integration" class="form-control">
-                  <option value="COMPONENT" selected>COMPONENT</option>
-                  <option value="COMPONENT_DYNAMIC_LIBRARY">COMPONENT_DYNAMIC_LIBRARY</option>
-                  <option value="COMPONENT_SEPARATE_WORK">COMPONENT_SEPARATE_WORK</option>
-                  <option value="OTHER_DEVELOPMENT_TOOL">OTHER_DEVELOPMENT_TOOL</option>
-                  <option value="COMPONENT_MODULE">COMPONENT_MODULE</option>
-                  <option value="IMPLEMENTATION_OF_STANDARD">IMPLEMENTATION_OF_STANDARD</option>
-                  <option value="PREREQUISITE_DYNAMIC_LIBRARY">PREREQUISITE_DYNAMIC_LIBRARY</option>
-                  <option value="PREREQUISITE_SERVICE">PREREQUISITE_SERVICE</option>
-                </select>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>
-              <div class="input">
-                <label>ShipStatus:</label>
-              </div>
-            </td>
-            <td>
-              <div class="input">
-                <select multiple name="shipstatus" id="shipstatus" class="form-control">
-                  <option value="Ship" selected>Ship</option>
-                  <option value="NotShip">NotShip</option>
-                  <option value="Used at run time">Used at runtime</option>
-                  <option value="Used at development time">Used at development time</option>
-                </select>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>
-              <div class="input">
-                <label>HomePage:</label>
-              </div>
-            </td>
-            <td>
-              <div class="input">
-                <input id="homepage" size="108" type="text" class="form-control"></input>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>
-              <div class="input">
-                <label>DualLicense:</label>
-              </div>
-            </td>
-            <td>
-              <div class="input">
-                <textarea class="form-control" id="duallicense" rows="2" cols="110" class="form-control"></textarea>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">7</th>
-            <td>
-              <label class="fixlabel">Comments:</label>
-            </td>
-            <td>
-              <label class="fixlabel">commented by Co Bao Hieu (MS/EMC42-XC);
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">8</th>
-            <td>
-              <div class="input">
-                <label>MultipleLicenses:</label>
-              </div>
-            </td>
-            <td>
-              <div class="input">
-                <textarea id="multiplelicense" rows="2" cols="110" class="form-control"></textarea>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">9</th>
-            <td>
-              <div class="input">
-                <label>AdditionalComments:</label>
-              </div>
-            </td>
-            <td>
-              <div class="input">
-                <textarea id="additionalcomment" rows="2" cols="110" class="form-control"></textarea>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">10</th>
-            <td>
-              <div class="input">
-                <label>Copyright:</label>
-              </div>
-            </td>
-            <td>
-              <div class="input">
-                <textarea id="copyright" rows="2" cols="110" class="form-control"></textarea>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td>
-              <div class="row">
-                <div class="col-xs-6 col-sm-4">
-                  <i class="fa-solid fa-file-export"></i>
-                  <button type="button" class="btn btn-fourth btn-success" value="Export" onclick="CommentsFunction()">
-                    <span class="fa fa-play">
-                      <strong class="text-lg-center font-weight-bold">&nbsp; Export</strong>
-                    </span>
-                  </button>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                  <button type="button" class="btn btn-first" value="Copy to clipboard" onclick="ClickToCopyFunction()">
-                    <span class="fa fa-clipboard">
-                      <strong class="text-lg-center font-weight-bold">&nbsp; Copy to clipboard</strong>
-                    </span>
-                  </button>
-                </div>
-              </div>
-              <!-- <input type="button" class="btn btn-warning text-right" value="Cut Text" onClick={handleCut()}> -->
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>
-              <label class="text-lg-center font-weight-bold" for="comment">Result:</label>
-            </td>
-            <td>
-              <textarea id="comment" rows="11" cols="110" class="form-control"></textarea>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <!-- Container Body -->
-      <!-- Container -->
-    </div>
-    <footer class="bg-light text-center text-lg-start">
-      <!-- Copyright -->
-      <div class="text-left p-4" style="background-color: #ffffff; padding-bottom: 10px;">
-        <!-- <table><td> -->
-        <hr>
-        <strong class="text-left" style="padding-left: 12px;">&copy; 2022-2023 OSS Teammate | Robert Bosch GmbH, all rights reserved</strong>
-        <!-- </td><td> -->
-        <!-- <a href="#top" id="btn-top" title="Go to top" onclick="topFunction()" class="fa fa-chevron-up" width="100%" height="24px"> -->
-        <!-- <a href="#top" id="btn-top" title="Go to top" onclick="topFunction()" width="100%" height="24px"><svg
-																xmlns="http://www.w3.org/2000/svg" width="20%" height="50%" fill="dark" class="text-right bi bi-chevron-compact-up padding-right: 10px;" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/></svg></a> -->
-        <!-- <button onclick="topFunction()" id="btn-top" title="Go to top">Top</button> -->
-        <!-- </td></table> -->
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <img class="pull-right" style="width: 100%; background: url(https://www.bosch-home.com/store/resources/5f1391b2e32a96c028327952251aa37c5c85165d/mbmd/a01-rebrush/img/shape_horizontal.svg);
-	background-size: cover;" alt="" title="" height="9" border="0" width="100%" top="0">
-    <script>
-      function CommentsFunction() {
-        var modificationstatus = document.getElementById("modificationstatus").value;
-        var distributionformat = document.getElementById("distributionformat").value;
-        var integration = document.getElementById("integration").value;
-        var shipstatus = document.getElementById("shipstatus").value;
-        var homepage = document.getElementById("homepage").value;
-        var duallicense = document.getElementById("duallicense").value;
-        var multiplelicense = document.getElementById("multiplelicense").value;
-        var additionalcomment = document.getElementById("additionalcomment").value;
-        var copyright = document.getElementById("copyright").value;
-        var comment = "ModificationStatus:" + modificationstatus + ";" + "\n" + "DistributionFormat:" + distributionformat + ";" + "\n" + "IntegrationType:" + integration + ";" + "\n" + "ShipStatus:" + shipstatus + ";" + "\n" + "HomePage:" + homepage + ";" + "\n" + "DualLicense:" + duallicense + ";" + "\n" + "Comments:commented by Co Bao Hieu (MS/EMC42-XC);" + "\n" + "MultipleLicenses:" + multiplelicense + ";" + "\n" + "AdditionalComments:" + additionalcomment + ";" + "\n" + "Copyright:" + copyright + ";" + "\n";
-        document.getElementById("comment").innerHTML = comment;
-        document.getElementById("homepage").value = "";
-        document.getElementById("duallicense").value = "";
-        document.getElementById("multiplelicense").value = "";
-        document.getElementById("additionalcomment").value = "";
-        document.getElementById("copyright").value = "";
-      }
+				<img src="https://www.bosch-softwaretechnologies.com/media/en/tech/tech_images/bosch_logo_res_260x85.png" alt="Bosch Global" width="50%" height="100%">
+			</td>
+			<td class="text-center"></td>
+			<td class="text-center">
+				<h1 class="text-center text-lg-center text-danger font-weight-bold"
+					style="font-weight:600 ; color: #0069d9;">
+					<strong>
+						OSS SCANNING COMMENTS TOOLS <span style="color:#ea0016">up to</span> <span style="color:#ea0016" class="txt-rotate" data-period="2000"
+							data-rotate='[ "2023" ]'></span>
+					</strong>
+				</h1>
+			</td>
+		</table>
+		<!-- Container Head-->
 
-      function ClickToCopyFunction() {
-        var copyText = document.getElementById("comment");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-        alert("Copied the text: " + copyText.value);
-      }
+		<!-- Container Body -->
+		<table class="table table-dark"">
+			<!-- <thead class=" p-3 mb-2 bg-success text-white">
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Names</th>
+				<th scope="col">Comments</th>
+			</tr>
+			</thead> -->
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>
+						<div class="input">
+							<label>ModificationStatus:</label>
+						</div>
+					</td>
+					<td>
+						<div class="input">
+							<select name="modificationstatus" id="modificationstatus" class="form-control">
+								<option value="As-Is" selected>As-Is</option>
+								<option value="Modified">Modified</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>
+						<div class="input">
+							<label>DistributionFormat:</label>
+						</div>
+					</td>
+					<td>
+						<div class="input">
+							<select name="distributionformat" id="distributionformat" class="form-control">
+								<option value="Binary" selected>Binary</option>
+								<option value="Source">Source</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>
+						<div class="input">
+							<label>IntegrationType:</label>
+						</div>
+					</td>
+					<td>
+						<div class="input">
+							<select multiple name="integration" id="integration" class="form-control">
+								<option value="COMPONENT" selected>COMPONENT</option>
+								<option value="COMPONENT_DYNAMIC_LIBRARY">COMPONENT_DYNAMIC_LIBRARY</option>
+								<option value="COMPONENT_SEPARATE_WORK">COMPONENT_SEPARATE_WORK</option>
+								<option value="OTHER_DEVELOPMENT_TOOL">OTHER_DEVELOPMENT_TOOL</option>
+								<option value="COMPONENT_MODULE">COMPONENT_MODULE</option>
+								<option value="IMPLEMENTATION_OF_STANDARD">IMPLEMENTATION_OF_STANDARD</option>
+								<option value="PREREQUISITE_DYNAMIC_LIBRARY">PREREQUISITE_DYNAMIC_LIBRARY</option>
+								<option value="PREREQUISITE_SERVICE">PREREQUISITE_SERVICE</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>
+						<div class="input">
+							<label>ShipStatus:</label>
+						</div>
+					</td>
+					<td>
+						<div class="input">
+							<select multiple name="shipstatus" id="shipstatus" class="form-control">
+								<option value="Ship" selected>Ship</option>
+								<option value="NotShip">NotShip</option>
+								<option value="Used at run time">Used at runtime</option>
+								<option value="Used at development time">Used at development time</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>
+						<div class="input">
+							<label>HomePage:</label>
+						</div>
+					</td>
+					<td>
+						<div class="input">
+							<input id="homepage" size="108" type="text" class="form-control"></input>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>
+						<div class="input">
+							<label>DualLicense:</label>
+						</div>
+					</td>
+					<td>
+						<div class="input">
+							<textarea class="form-control" id="duallicense" rows="2" cols="110"
+								class="form-control"></textarea>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">7</th>
+					<td><label class="fixlabel">Comments:</label></td>
+					<td><label class="fixlabel">commented by Co Bao Hieu (MS/EMC42-XC);</td>
+				</tr>
+				<tr>
+					<th scope="row">8</th>
+					<td>
+						<div class="input">
+							<label>MultipleLicenses:</label>
+						</div>
+					</td>
+					<td>
+						<div class="input">
+							<textarea id="multiplelicense" rows="2" cols="110" class="form-control"></textarea>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">9</th>
+					<td>
+						<div class="input">
+							<label>AdditionalComments:</label>
+						</div>
+					</td>
+					<td>
+						<div class="input">
+							<textarea id="additionalcomment" rows="2" cols="110" class="form-control"></textarea>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">10</th>
+					<td>
+						<div class="input">
+							<label>Copyright:</label>
+						</div>
+					</td>
+					<td>
+						<div class="input">
+							<textarea id="copyright" rows="2" cols="110" class="form-control"></textarea>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"></th>
+					<td></td>
+					<td>
+						<div class="row">
+							<div class="col-xs-6 col-sm-4"><i class="fa-solid fa-file-export"></i>
+								<button type="button" class="btn btn-fourth btn-success" value="Export"
+									onclick="CommentsFunction()">
+									<span class="fa fa-play"><strong class="text-lg-center font-weight-bold">&nbsp;
+											Export</strong></span>
+								</button>
+							</div>
+							<div class="col-xs-6 col-sm-4">
+								<button type="button" class="btn btn-first" value="Copy to clipboard"
+									onclick="ClickToCopyFunction()">
+									<span class="fa fa-clipboard"><strong class="text-lg-center font-weight-bold">&nbsp;
+											Copy to clipboard</strong></span>
+								</button>
+							</div>
+						</div>
+						<!-- <input type="button" class="btn btn-warning text-right" value="Cut Text" onClick={handleCut()}> -->
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"></th>
+					<td>
+						<label class="text-lg-center font-weight-bold" for="comment">Result:</label>
+					</td>
+					<td>
+						<textarea id="comment" rows="11" cols="110" class="form-control"></textarea>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- Container Body -->
 
-      function ClearTextFunction() {
-        document.getElementById('comment').value = "";
-      }
-      handleCut = (e) => {
-        document.querySelector('#comment').select();
-        document.execCommand('cut');
-      }
-    </script>
-    <script>
-      var TxtRotate = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-      };
-      TxtRotate.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-        if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-        this.el.innerHTML = ' < span class = "wrap" > ' + this.txt + ' < /span>';
-        var that = this;
-        var delta = 300 - Math.random() * 100;
-        if (this.isDeleting) {
-          delta /= 2;
-        }
-        if (!this.isDeleting && this.txt === fullTxt) {
-          delta = this.period;
-          this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-          this.isDeleting = false;
-          this.loopNum++;
-          delta = 500;
-        }
-        setTimeout(function() {
-          that.tick();
-        }, delta);
-      };
-      window.onload = function() {
-        var elements = document.getElementsByClassName('txt-rotate');
-        for (var i = 0; i < elements.length; i++) {
-          var toRotate = elements[i].getAttribute('data-rotate');
-          var period = elements[i].getAttribute('data-period');
-          if (toRotate) {
-            new TxtRotate(elements[i], JSON.parse(toRotate), period);
-          }
-        }
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.09em solid #303030 } .txt-rotate, .wrap { font-family: inherit !important;}";
-        document.body.appendChild(css);
-      };
-    </script>
-    <script>
-      // Get the button
-      let topButton = document.getElementById("btn-top");
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {
-        scrollFunction()
-      };
+		<!-- Container -->
+	</div>
+	<footer class="bg-light text-center text-lg-start">
+		<!-- Copyright -->
+		<div class="text-center p-4" style="background-color: #ffffff; padding-bottom: 10px;">
+			<!-- <table>
+				<td> -->
+			<hr><strong class="text-center" style="padding-left: 12px;">&copy; 2022-2023 OSS Teammate | Robert Bosch GmbH,
+				all rights reserved</strong>
+			<!-- </td>
+				<td> -->
+			<!-- <a href="#top" id="btn-top" title="Go to top" onclick="topFunction()" class="fa fa-chevron-up" width="100%" height="24px"> -->
+			<!-- <a href="#top" id="btn-top" title="Go to top" onclick="topFunction()" width="100%" height="24px">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20%" height="50%" fill="dark" class="text-right bi bi-chevron-compact-up padding-right: 10px;" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/> </svg>
+					</a> -->
+			<!-- <button onclick="topFunction()" id="btn-top" title="Go to top">Top</button> -->
+			<!-- </td>
+			</table> -->
+		</div>
+		<!-- Copyright -->
+	</footer>
+	<img class="pull-right" style="width: 100%; background: url('https://www.bosch-home.com/store/resources/5f1391b2e32a96c028327952251aa37c5c85165d/mbmd/a01-rebrush/img/shape_horizontal.svg'); background-size: cover; background-attachment: fixed;" alt="" title="" height="9" border="0" width="100%" top="0">
+	<script>
+		function CommentsFunction() {
+			var modificationstatus = document.getElementById("modificationstatus").value;
+			var distributionformat = document.getElementById("distributionformat").value;
+			var integration = document.getElementById("integration").value;
+			var shipstatus = document.getElementById("shipstatus").value;
+			var homepage = document.getElementById("homepage").value;
+			var duallicense = document.getElementById("duallicense").value;
+			var multiplelicense = document.getElementById("multiplelicense").value;
+			var additionalcomment = document.getElementById("additionalcomment").value;
+			var copyright = document.getElementById("copyright").value;
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          topButton.style.display = "block";
-        } else {
-          topButton.style.display = "none";
-        }
-      }
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-  </body>
+			var comment = "ModificationStatus:" + modificationstatus + ";" + "\n" +
+				"DistributionFormat:" + distributionformat + ";" + "\n" +
+				"IntegrationType:" + integration + ";" + "\n" +
+				"ShipStatus:" + shipstatus + ";" + "\n" +
+				"HomePage:" + homepage + ";" + "\n" +
+				"DualLicense:" + duallicense + ";" + "\n" +
+				"Comments:commented by Co Bao Hieu (MS/EMC42-XC);" + "\n" +
+				"MultipleLicenses:" + multiplelicense + ";" + "\n" +
+				"AdditionalComments:" + additionalcomment + ";" + "\n" +
+				"Copyright:" + copyright + ";" + "\n";
+
+			document.getElementById("comment").innerHTML = comment;
+			document.getElementById("homepage").value = "";
+			document.getElementById("duallicense").value = "";
+			document.getElementById("multiplelicense").value = "";
+			document.getElementById("additionalcomment").value = "";
+			document.getElementById("copyright").value = "";
+		}
+
+		function ClickToCopyFunction() {
+			var copyText = document.getElementById("comment");
+			copyText.select();
+			copyText.setSelectionRange(0, 99999);
+			navigator.clipboard.writeText(copyText.value);
+
+			alert("Copied the text: " + copyText.value);
+		}
+
+		function ClearTextFunction() {
+			document.getElementById('comment').value = "";
+		}
+
+		handleCut = (e) => {
+			document.querySelector('#comment').select();
+			document.execCommand('cut');
+		}
+
+	</script>
+
+	<script>
+		var TxtRotate = function (el, toRotate, period) {
+			this.toRotate = toRotate;
+			this.el = el;
+			this.loopNum = 0;
+			this.period = parseInt(period, 10) || 2000;
+			this.txt = '';
+			this.tick();
+			this.isDeleting = false;
+		};
+
+		TxtRotate.prototype.tick = function () {
+			var i = this.loopNum % this.toRotate.length;
+			var fullTxt = this.toRotate[i];
+
+			if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length - 1);
+			} else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+			}
+
+			this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+			var that = this;
+			var delta = 300 - Math.random() * 100;
+
+			if (this.isDeleting) { delta /= 2; }
+
+			if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+			} else if (this.isDeleting && this.txt === '') {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+			}
+
+			setTimeout(function () {
+				that.tick();
+			}, delta);
+		};
+
+		window.onload = function () {
+			var elements = document.getElementsByClassName('txt-rotate');
+			for (var i = 0; i < elements.length; i++) {
+				var toRotate = elements[i].getAttribute('data-rotate');
+				var period = elements[i].getAttribute('data-period');
+				if (toRotate) {
+					new TxtRotate(elements[i], JSON.parse(toRotate), period);
+				}
+			}
+
+			var css = document.createElement("style");
+			css.type = "text/css";
+			css.innerHTML = ".txt-rotate > .wrap { border-right: 0.09em solid #303030 } .txt-rotate, .wrap { font-family: inherit !important;}";
+			document.body.appendChild(css);
+		};
+	</script>
+
+	<script>
+		// Get the button
+		let topButton = document.getElementById("btn-top");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				topButton.style.display = "block";
+			} else {
+				topButton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+
 </html>
