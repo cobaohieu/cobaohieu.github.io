@@ -75,7 +75,7 @@
 			text-decoration: none;
 			text-align: center;
 			text-transform: uppercase;
-			/* font-family: 'Montserrat', sans-serif; */
+			font-family: 'Montserrat', sans-serif;
 		}
 		.btn:hover, .btn:focus {
 			color: #fff;
@@ -307,11 +307,15 @@
 					<td></td>
 					<td>
 						<div class="row">
-							<div class="col-xs-6 col-sm-4">
-								<input type="button" class="btn btn-fourth btn-success text-left" value="Export" onclick="CommentsFunction()">
+							<div class="col-xs-6 col-sm-4"><i class="fa-solid fa-file-export"></i>
+								<button type="button" class="btn btn-fourth btn-success" value="Export" onclick="CommentsFunction()">
+									<span class="fa fa-play"><strong class="text-lg-center font-weight-bold">&nbsp; Export</strong></span>
+								</button>
 							</div>
 							<div class="col-xs-6 col-sm-4">
-								<input type="button" class="btn btn-first text-center" value="Copy to clipboard" onclick="ClickToCopyFunction()">
+								<button type="button" class="btn btn-first" value="Copy to clipboard" onclick="ClickToCopyFunction()">
+									<span class="fa fa-clipboard"><strong class="text-lg-center font-weight-bold">&nbsp; Copy to clipboard</strong></span>
+								</button>
 							</div>
 						</div>
 							<!-- <input type="button" class="btn btn-warning text-right" value="Cut Text" onClick={handleCut()}> -->
