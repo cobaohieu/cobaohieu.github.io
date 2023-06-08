@@ -17,6 +17,35 @@
 	<style>
 		label {margin-bottom:7px;}
 
+		figure {
+			display: block;
+			background: #cdf;
+			width: 90%;
+			max-width: 50em;
+			box-sizing: border-box;
+			margin: 1em auto;
+			padding: 0.5em 1em;
+			border: solid thin navy;
+		}
+		figure:nth-of-type(2n) {
+			background: #bfc;
+		}
+		figcaption, figure > div {
+			display: block;
+			vertical-align: middle;
+		}
+		figure > div {
+			text-align: center;
+		}
+		svg, .bg-svg {
+			border: thin dotted darkgrey;
+		}
+		svg.defs-only {
+			display:block; position: absolute; 
+			height:0; width:0; margin: 0; padding: 0; 
+			border: none; overflow: hidden;
+		}
+
 		.fixlabel {display:block;}
 
 		.input {display:block;margin-bottom:7px;}
@@ -103,7 +132,8 @@
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
 	">
-	<img class="pull-right" src="http://sgpvmc0509:8090/oss/bosch_row.PNG" alt="" title="" height="9" border="0" width="100%" top="0">
+	<img class="pull-right" src="" style="width: 100%; background: url(https://www.bosch-home.com/store/resources/5f1391b2e32a96c028327952251aa37c5c85165d/mbmd/a01-rebrush/img/shape_horizontal.svg);
+	background-size: cover;" alt="" title="" height="9" border="0" width="100%" top="0">
 
 	<div class="container" style="background-color: #ffffff">
 	<!-- Container -->
@@ -320,7 +350,8 @@
 		</div>
 	<!-- Copyright -->
 	</footer>
-	<img class="pull-right" src="http://sgpvmc0509:8090/oss/bosch_row.PNG" alt="" title="" height="9" border="0" width="100%" top="0">
+	<img class="pull-right" src="" style="width: 100%; background: url(https://www.bosch-home.com/store/resources/5f1391b2e32a96c028327952251aa37c5c85165d/mbmd/a01-rebrush/img/shape_horizontal.svg);
+	background-size: cover;" alt="" title="" height="9" border="0" width="100%" top="0">
 	<script>
 		function CommentsFunction() {
 			var modificationstatus = document.getElementById("modificationstatus").value;
