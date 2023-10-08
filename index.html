@@ -261,10 +261,21 @@
         const darkModeToggle = document.getElementById('darkModeToggle');
         const body = document.body;
         const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
-        if (isDarkMode) {
+
+        // Check if it's daytime (before noon) and enable dark mode
+        const currentTime = new Date();
+        const isDaytime = currentTime.getHours() > 16;
+
+        if (isDaytime && isDarkMode) {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'disabled');
+            darkModeToggle.checked = false;
+        } else if (!isDaytime && !isDarkMode) {
             body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
             darkModeToggle.checked = true;
         }
+
         darkModeToggle.addEventListener('change', () => {
             if (darkModeToggle.checked) {
                 body.classList.add('dark-mode');
@@ -275,7 +286,6 @@
             }
         });
     </script>
-
 
 </body>
 
