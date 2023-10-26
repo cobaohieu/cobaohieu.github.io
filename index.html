@@ -50,7 +50,7 @@
 						Career <span class="fa-solid fa-briefcase"></span></a></li>
 			</ul>
 			<label class="mode">
-				<input type="checkbox" id="darkbtn">
+				<input type="checkbox" id="darkModeToggle">
 				<i class='bx bxs-moon'></i>
 			</label>
 		</div>
@@ -334,23 +334,33 @@
 
 	<!-- Scripts -->
 	<script>
-		const darkbtn = document.getElementById('darkbtn');
-		const body = document.body;
-		const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
-		if (isDarkMode) {
-			body.classList.add('dark-mode');
-			darkbtn.checked = true;
-		}
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
 
-		darkbtn.addEventListener('change', () => {
-			if (darkbtn.checked) {
-				body.classList.add('dark-mode');
-				localStorage.setItem('darkMode', 'enabled');
-			} else {
-				body.classList.remove('dark-mode');
-				localStorage.setItem('darkMode', 'disabled');
-			}
-		});
+        // Check if it's daytime (before noon) and enable dark mode
+        const currentTime = new Date();
+        const isDaytime = currentTime.getHours() > 16;
+
+        if (isDaytime && isDarkMode) {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'disabled');
+            darkModeToggle.checked = false;
+        } else if (!isDaytime && !isDarkMode) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+            darkModeToggle.checked = true;
+        }
+
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
 
 		var btn = $('#back2top');
 		$(window).scroll(function () {
