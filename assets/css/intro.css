@@ -342,6 +342,7 @@ a {
     font-size: 2em;
     line-height: 50px;
     display: block;
+}
 
 #back2top:hover {
     cursor: pointer;
